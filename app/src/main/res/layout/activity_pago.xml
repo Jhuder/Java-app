@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color12"
+    tools:context=".Pago">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/color04"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblPago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="8dp"
+            android:text="NUEVO PAGO"
+            android:textColor="@color/color09"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilNombreProveedorPago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/boton_pagos"
+                >
+
+                <TextView
+                    android:textColor="@color/teal"
+                    android:id="@+id/lblNombre"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Nombre Proveedor"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/spnrNombreProveedor"
+                    style="@style/style_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/color09"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:inputType="textPersonName" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/tilMontoPago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:textColor="@color/color09"
+                android:textColorHint="@color/color13"
+                app:errorTextAppearance="@style/AppTheme.EditTextError"
+                app:hintTextAppearance="@style/AppTheme.FloatingLabelNuevo">
+
+                <EditText
+                    android:id="@+id/txtMontoPagar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="Monto a pagar"
+                    android:inputType="numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilPinRegistroPago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color13"
+                app:counterEnabled="true"
+                app:counterMaxLength="8"
+                app:counterOverflowTextAppearance="@style/AppTheme.CharacterCounter"
+                app:errorTextAppearance="@style/AppTheme.EditTextError"
+                app:hintTextAppearance="@style/AppTheme.FloatingLabelNuevo"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/txtPinPago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Ingrese PIN"
+                    android:inputType="numberPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/AyudaIngresarBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnGuardarPago"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/color05"
+                    android:text="@string/btnGuardar"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnCancelarPago"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/rojo"
+                    android:text="@string/btnCancelar"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

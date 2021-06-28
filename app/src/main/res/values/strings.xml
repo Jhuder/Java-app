@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">MarketDay</string>
+    //LOGIN
+
+    <string name="txtPass">PIN</string>
+    <string name="btnIniciarSesion">INICIAR SESIÓN</string>
+    <string name="btnRegistrar">REGISTRARSE</string>
+    <string name="btnContraseniaOlvidada">Has Olvidado Tu PIN</string>
+
+    //MENU
+    <string name="lblMenu">MENU</string>
+    <string name="lblProveedores">Proveedores</string>
+    <string name="lblCompras">Comprar</string>
+    <string name="lblPagos">Pagos</string>
+    <string name="lblClientes">Clientes</string>
+    <string name="lblHistorialCompras">Historial de Compras</string>
+
+    <string name="btnProveedores">PROVEEDORES</string>
+    <string name="btnHistorialCompras">HISTORIAL DE COMPRAS</string>
+    <string name="btnCompras">COMPRAR</string>
+    <string name="btnPagos">PAGO</string>
+    <string name="btnClientes">CLIENTES</string>
+    <string name="btnAyuda">AYUDA</string>
+    <string name="btnSalir">SALIR</string>
+    <string name="btnAcerca">Acerca De</string>
+    <string name="btnMenu">MENU</string>
+
+    //PERFIL
+    <string name="lblPerfil">PERFIL</string>
+    <string name="lblUsuario">USUARIO:</string>
+    <string name="lblFecha">FECHA:</string>
+
+    <string name="lblEstadoActivo">Conectado a red movil o inalambrica</string>
+    <string name="lblEstadoMuerto">No hay conexión</string>
+
+    //REGISTRO
+    <string name="txtNombres">Nombres</string>
+    <string name="txtApellidos">Apellidos</string>
+    <string name="txtNumero">Numero Celular</string>
+    <string name="txtCorreo">Correo Electrónico</string>
+    <string name="txtContrasenia">PIN </string>
+    <string name="txtConfirmarContrasenia">Escriba nuevamente el PIN </string>
+    <string name="btnRegistro">REGISTRAR</string>
+    <string name="btnIngresar">INICIAR SESIÓN</string>
+
+
+    //CONTRASEÑAOLVIDADA
+    <string name="btnRecuperar">Recuperar PIN</string>
+
+    //AÑADIR_PROVEEDOR
+    <string name="lblAniadirProveedores">Añadir Proveedor   </string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="btnGuardar">Guardar</string>
+
+
+</resources>

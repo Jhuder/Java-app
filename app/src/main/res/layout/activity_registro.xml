@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color12"
+    app:layout_behavior="@string/app_name"
+    tools:context="com.example.infinity.Registro">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layNombres"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imgReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/color08"
+                    android:src="@drawable/registro_03" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/layNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layApellido"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgNombres"
+                    android:layout_width="73dp"
+                    android:layout_height="31dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/contacto" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColorHint="@color/color13"
+                    app:errorTextAppearance="@style/AppTheme.EditTextError"
+
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+                    <EditText
+                        android:id="@+id/txtNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:layout_alignStart="@+id/til_ap"
+                        android:layout_alignLeft="@+id/til_ap"
+                        android:background="@drawable/linea_text"
+                        android:hint="@string/txtNombres"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:textColor="@color/color09"
+                        android:textCursorDrawable="@null" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            //APELLIDOS
+
+            <LinearLayout
+                android:id="@+id/layApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layNumero"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgApellido"
+                    android:layout_width="73dp"
+                    android:layout_height="31dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/contacto" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilApellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColorHint="@color/color13"
+                    app:errorTextAppearance="@style/AppTheme.EditTextError"
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+                    <EditText
+                        android:id="@+id/txtApellidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignStart="@+id/til_ap"
+                        android:layout_alignLeft="@+id/til_ap"
+                        android:background="@drawable/linea_text"
+                        android:hint="@string/txtApellidos"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:textColor="@color/color09" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            //CELULAR
+
+            <LinearLayout
+                android:id="@+id/layNumero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layCorreo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="7dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgNumero"
+                    android:layout_width="73dp"
+                    android:layout_height="31dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/telefono" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilNumero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:textColor="@color/color09"
+                    android:textColorHint="@color/color13"
+                    app:errorTextAppearance="@style/AppTheme.EditTextError"
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+                    <EditText
+                        android:id="@+id/txtNumero"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:background="@drawable/linea_text"
+                        android:hint="@string/txtNumero"
+                        android:inputType="phone"
+                        android:textColor="@color/color09" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            //CORREO
+
+            <LinearLayout
+                android:id="@+id/layCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layPin1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgCorreo"
+                    android:layout_width="73dp"
+                    android:layout_height="29dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/email" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:orientation="horizontal"
+                    android:textColor="@color/color09"
+                    android:textColorHint="@color/color13"
+                    app:errorTextAppearance="@style/AppTheme.EditTextError"
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+                    <EditText
+                        android:id="@+id/txtCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:background="@drawable/linea_text"
+                        android:hint="@string/txtCorreo"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/color09" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+            //PIN
+
+            <LinearLayout
+                android:id="@+id/layPin1"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_above="@+id/layPin2"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="9dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPin1"
+                    android:layout_width="73dp"
+                    android:layout_height="34dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/llave" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilPin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/layPin1"
+                    android:textColorHint="@color/color13"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="8"
+                    app:counterOverflowTextAppearance="@style/AppTheme.CharacterCounter"
+                    app:errorTextAppearance="@style/AppTheme.EditTextError"
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabel"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/txtPin1"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:background="@drawable/linea_text"
+                        android:hint="@string/txtContrasenia"
+                        android:inputType="numberPassword"
+                        android:textColor="@color/color09" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            //CONFIRMAR_PIN
+
+            <LinearLayout
+                android:id="@+id/layPin2"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_above="@+id/RegistrarBar"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPin2"
+                    android:layout_width="73dp"
+                    android:layout_height="34dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/llave" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilPin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:textColorHint="@color/color13"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="8"
+                    app:counterOverflowTextAppearance="@style/AppTheme.CharacterCounter"
+                    app:errorTextAppearance="@style/AppTheme.EditTextError"
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabel"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/txtPin2"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:background="@drawable/linea_text"
+                        android:hint="@string/txtConfirmarContrasenia"
+                        android:inputType="numberPassword"
+                        android:textColor="@color/color09" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            //REGISTRO
+
+            <LinearLayout
+                android:id="@+id/RegistrarBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/AyudaIngresarBar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="-5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnRegistro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/color05"
+                    android:text="@string/btnRegistrar"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            //INICIO
+
+            <LinearLayout
+                android:id="@+id/AyudaIngresarBar"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="19dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/btnIngresar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/color04"
+                    android:text="@string/btnIngresar"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

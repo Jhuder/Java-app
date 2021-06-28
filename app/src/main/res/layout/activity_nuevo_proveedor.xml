@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevoProveedor">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/color12"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="16dp"
+            android:text="NUEVO PROVEEDOR"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/color09"
+            android:background="@color/color04"
+            android:gravity="center" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textColor="@color/color09"
+                    android:textColorHint="@color/color13"
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabelNuevo"
+                    >
+                    <EditText
+                        android:id="@+id/txtNombreProveedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="16dp"
+
+
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:hint="Nombre de Proveedor"
+                        android:inputType="textPersonName"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textColor="@color/color09"
+                    android:textColorHint="@color/color13"
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabelNuevo">
+                    <EditText
+                        android:id="@+id/txtMontoInicial"
+                        android:inputType="numberDecimal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:hint="Debito Inicial"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:textColor="@color/color09"
+                    android:textColorHint="@color/color13"
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabelNuevo">
+                    <EditText
+                        android:id="@+id/txtUbicacion"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:hint="Ubicación (*)"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textColor="@color/color09"
+                    android:textColorHint="@color/color13"
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabelNuevo">
+
+                    <EditText
+                        android:id="@+id/txtCelular"
+                        android:inputType="phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:hint="Numero movil (*)"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="5dp"
+                    android:text="(*) Campo no obligatorio"
+                    android:textColor="@color/color09"
+
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:id="@+id/AyudaIngresarBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btnGuardarProveedor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/color05"
+                        android:text="@string/btnGuardar"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/btnCancelarProveedor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/rojo"
+
+                        android:text="@string/btnCancelar"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

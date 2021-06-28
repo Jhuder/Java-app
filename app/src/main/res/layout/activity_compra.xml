@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color12"
+    tools:context=".Compra">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/color04"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="8dp"
+            android:text="NUEVA COMPRA"
+            android:textColor="@color/color09"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilNombreProveedorCompra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/boton_pagos"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+
+                    android:text="Nombre Proveedor"
+                    android:textColor="@color/teal"
+                    android:textSize="12dp" />
+
+                <Spinner
+                    android:id="@+id/spnrNombreProveedor"
+                    style="@style/style_Spinner"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:inputType="textPersonName"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/color09" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Fecha" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilProductosCompra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/boton_pagos"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/lblNombreProductos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+
+                    android:text="Añadir Productos"
+                    android:textColor="@color/teal"
+                    android:textSize="12dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <ListView
+        android:id="@+id/listViewProductos"
+        android:layout_width="0dp"
+        android:layout_height="205dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="@color/color09"
+        android:backgroundTint="@color/color12"
+        android:dividerHeight="3dp">
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/listViewProductos2"
+        android:layout_width="0dp"
+        android:layout_height="205dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="@color/color09"
+        android:backgroundTint="@color/color12"
+        android:dividerHeight="3dp">
+
+    </ListView>
+</LinearLayout>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/AyudaIngresarBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnGuardarPago"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/color05"
+                    android:text="Comprar"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnCancelarPago"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/rojo"
+                    android:text="@string/btnCancelar"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+
+
+

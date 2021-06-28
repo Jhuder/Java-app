@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color12"
+    app:layout_behavior="@string/app_name"
+    tools:context=".PinOlvidado">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="14dp"
+                android:background="@color/color05"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblRecuperarCuenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/btnContraseniaOlvidada"
+                    android:textColor="@color/color09"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layNombresRecuperar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layApellidoRecuperar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgNombresRecuperar"
+                    android:layout_width="73dp"
+                    android:layout_height="31dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/contacto" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilNombreRecuperar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColorHint="@color/color13"
+                    app:errorTextAppearance="@style/AppTheme.EditTextError"
+
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+                    <EditText
+                        android:id="@+id/txtNombreRecuperar"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:layout_alignStart="@+id/til_ap"
+                        android:layout_alignLeft="@+id/til_ap"
+                        android:background="@drawable/linea_text"
+                        android:hint="@string/txtNombres"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:textColor="@color/color09"
+                        android:textCursorDrawable="@null" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            //APELLIDOS
+
+            <LinearLayout
+                android:id="@+id/layApellidoRecuperar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layNumeroRecuperar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilApellidosRecuperar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColorHint="@color/color13"
+                    app:errorTextAppearance="@style/AppTheme.EditTextError"
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+                    <EditText
+                        android:id="@+id/txtApellidosRecuperar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignStart="@+id/til_ap"
+                        android:layout_alignLeft="@+id/til_ap"
+                        android:background="@drawable/linea_text"
+                        android:hint="@string/txtApellidos"
+                        android:layout_marginStart="73dp"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:textColor="@color/color09"
+                        android:layout_marginLeft="0dp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            //CORREO
+
+            <LinearLayout
+                android:id="@+id/layCorreoRecuperar"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_above="@+id/layPin1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgCorreoRecuperar"
+                    android:layout_width="73dp"
+                    android:layout_height="29dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/email" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilCorreoRecuperar"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:orientation="horizontal"
+                    android:textColor="@color/color09"
+                    android:textColorHint="@color/color13"
+                    app:errorTextAppearance="@style/AppTheme.EditTextError"
+                    app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+                    <EditText
+                        android:id="@+id/txtCorreoRecuperar"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:background="@drawable/linea_text"
+                        android:hint="@string/txtCorreo"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/color09" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+
+            //ENVIO
+
+            <LinearLayout
+                android:id="@+id/RecuperarBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_above="@+id/AyudaIngresarBar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnRecuperar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/rojo"
+                    android:onClick="Login"
+                    android:text="@string/btnRecuperar"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

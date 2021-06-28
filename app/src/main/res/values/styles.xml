@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/color09</item>
+        <item name="android:textColor">@color/color12</item>
+        <item name="buttonBarPositiveButtonStyle">@color/color12</item>
+
+
+    </style>
+
+    <!--Etiqueta flotante-->
+    <style name="AppTheme.FloatingLabel" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color11</item>
+        <item name="android:textSize">12dp</item>
+
+    </style>
+    <style name="AppTheme.EditTextError" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/rojo</item>
+        <item name="android:textSize">10dp</item>
+
+    </style>
+
+    <style name="AppTheme.CharacterCounter" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/rojo</item>
+    </style>
+
+    <style name="AppTheme.FloatingLabelNuevo" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/teal</item>
+        <item name="android:textSize">12dp</item>
+
+    </style>
+
+    <style name="style_Spinner">
+        <item name="android:dropDownSelector">#B4033E</item>
+        <item name="android:popupBackground">#E83B998B</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+
+</resources>

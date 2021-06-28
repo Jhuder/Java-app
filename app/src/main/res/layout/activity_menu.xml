@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color09"
+
+    app:layout_behavior="@string/app_name"
+    tools:context="com.example.infinity.MenuMarket">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/PerfilBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblFecha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Fecha no disponible"
+                        android:textColor="@color/color12"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lblNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/lblEstadoActivo"
+                    android:textColor="@color/color11"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </LinearLayout>
+
+
+            //PROVEEDORES
+
+            <LinearLayout
+                android:id="@+id/layProveedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"/>
+
+            //COMPRAS
+
+            <LinearLayout
+                android:id="@+id/layCompra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"/>
+
+            //PAGOS
+
+            <LinearLayout
+                android:id="@+id/layPago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"/>
+
+            //CLIENTE
+
+            <LinearLayout
+                android:id="@+id/layCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"/>
+
+            //CONTABILIDAD
+
+            <LinearLayout
+                android:id="@+id/layContabilidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="7dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"/>
+
+
+            //BOTONES
+
+
+            <LinearLayout
+                android:id="@+id/AyudaIngresarBar"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="-3dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnMostrar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/color01"
+                    android:text="MOSTRAR"
+                    android:textColor="@android:color/white" />
+
+
+                <Button
+                    android:id="@+id/btnSalir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/rojo"
+                    android:text="@string/btnSalir"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            //=====================================================================================================================================================
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
+
+
+
